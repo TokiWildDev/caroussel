@@ -1,6 +1,44 @@
 @import "utils/colors";
 
+body
+{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+
+
+}
+
 h1
 {
     color: $colorH1;
+}
+
+#caroussel // section qui contient le caroussel //
+{
+    display: flex;
+
+    .container // Contenant des différents éléments du carroussel //
+    {
+        min-width: 650px;
+        height: 500px;
+        border: $border;
+        margin-right: 15px;
+
+        &__img
+        {
+            height: 60%;
+            border-bottom: $border;
+            background-image: radial-gradient(circle at top right, rgb(36, 9, 119) 0%, rgb(36, 9, 119) 48%,rgb(72, 7, 149) 48%, rgb(72, 7, 149) 53%,rgb(109, 5, 178) 53%, rgb(109, 5, 178) 56%,rgb(145, 2, 208) 56%, rgb(145, 2, 208) 69%,rgb(181, 0, 237) 69%, rgb(181, 0, 237) 100%);
+        }
+
+        &__text
+        {
+            height: 50%;
+        }
+    }
+
 }
